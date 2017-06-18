@@ -9,8 +9,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //setting test to textviews
         textview_text.setText("First Kotlin app")
 
+        // button clicks handled easily and very readable
         button.setOnClickListener { textview_text.setText("Button clicked!") }
     }
 }
